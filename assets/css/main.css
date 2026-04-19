@@ -1,0 +1,231 @@
+:root {
+  --bg: #0d0d0d;
+  --text: #d97706;
+  --heading: #f5c842;
+  --link: #d97706;
+  --link-hover: #fcd34d;
+  --muted: #7a4f08;
+  --border: #1e1e1e;
+  --code-bg: #171717;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.75;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.container {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+
+header {
+  margin-bottom: 3.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ── Typography ── */
+
+h1, h2, h3, h4 {
+  color: var(--heading);
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 1.7rem; margin-top: 0; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.1rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+ul, ol {
+  margin: 0 0 1rem 1.4rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--muted);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+code {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.88em;
+  color: var(--heading);
+}
+
+pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+pre code {
+  border: none;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* ── Home page ── */
+
+.profile-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--muted);
+  flex-shrink: 0;
+}
+
+.profile-text h1 {
+  margin-bottom: 0.4rem;
+}
+
+.section-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+/* ── Post / writing list ── */
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  display: flex;
+  gap: 1.25rem;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+}
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.85rem;
+  min-width: 85px;
+  flex-shrink: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.post-link {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.post-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* ── Post content ── */
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.post-title {
+  margin-bottom: 0.25rem;
+}
+
+/* ── Footer ── */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .profile-wrap {
+    flex-direction: column;
+  }
+}
