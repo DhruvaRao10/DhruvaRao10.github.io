@@ -1,35 +1,20 @@
 ---
 layout: page
-title: About
+title: Dhruva Rao
 permalink: /about/
 order: 1
 ---
 
-सुदिनमस्तु! I'm Dhruva Rao — welcome to my little corner of the universe.
+सुदिनमस्तु! Welcome to my little corner of the universe.
 
-I'm a software engineer and ML researcher currently at **Hitachi** on the platform sustenance team, working on embedded systems and OS-level features for edge devices.
+I'm a software engineer at Hitachi working on embedded systems and OS-level features for edge devices. Before that I did stints in data science and ML engineering — a healthcare RAG pipeline at a US startup, an AI agent system for sales call analysis at an India-based org. The through-line across all of it has been language and reasoning: getting machines to do something useful with text, and understanding why they can or can't.
 
-## Why you might know me
+Right now I'm spending a lot of my time outside work on two things. One is building language models for Tulu and Sanskrit — low-resource languages with rich literary traditions that are mostly invisible to modern NLP. The other is a physics reasoning model that tries to derive answers from first principles rather than memorise solution patterns. Both feel like the same underlying question to me: what does it actually mean for a model to understand something?
 
-I've been interning and building across the stack for a while:
+I'm also working through a pile of papers on diffusion models and reinforcement learning, usually by rebuilding the architectures from scratch. Reading a paper and then implementing it cold is the only way I've found to know whether I actually understood it.
 
-- **Data science & product intern** at a US healthcare startup — built RAG pipelines and front-end for healthcare products
-- **ML engineering intern** in India — built AI agent pipelines for sales call analysis
-- **Software Engineer at Hitachi** — embedded systems, OS-level feature work for edge devices
+Outside of ML, I follow rocket launches obsessively — SpaceX and ISRO both. I read a lot of geopolitics and Indic history, and I'm perpetually fascinated by how the same political and civilisational patterns seem to repeat across centuries with different names.
 
-## What I'm working on
+---
 
-- Building language models for low-resource languages, particularly **Tulu** and **Sanskrit**
-- Developing a sample-efficient **physics reasoning model** grounded in first-principles reasoning
-- Reading, reproducing, and implementing papers on **diffusion models** and **reinforcement learning**
-
-## What I think about
-
-I spend a lot of time with NLP mathematics — rebuilding architectures from scratch to really understand them. Outside of ML, I follow **SpaceX and ISRO** launches closely and read about aerospace engineering. I'm also drawn to **geopolitics and Indic history**, particularly the cyclical patterns that seem to repeat across centuries.
-
-## Find me
-
-- GitHub: [DhruvaRao10](https://github.com/DhruvaRao10)
-- Twitter: [@tech_dharmic](https://x.com/tech_dharmic)
-- Hugging Face: [DrDrunkenstein22](https://huggingface.co/DrDrunkenstein22)
-- Email: sentientmachine22@gmail.com
+[GitHub](https://github.com/DhruvaRao10) &middot; [Twitter](https://x.com/tech_dharmic) &middot; [Hugging Face](https://huggingface.co/DrDrunkenstein22) &middot; sentientmachine22@gmail.com
