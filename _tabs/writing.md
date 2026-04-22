@@ -15,5 +15,5 @@ order: 3
   {% endfor %}
 </ul>
 {% else %}
-<p>Nothing here yet — writing incoming.</p>
+<p>Writing incoming</p>
 {% endif %}

@@ -5,7 +5,10 @@ layout: default
 <div class="profile-wrap">
   <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Dhruva Rao" class="profile-img">
   <div class="profile-text">
-    <p>सुदिनमस्तु! Software engineer, ML researcher, and writer. Building language models for low-resource languages, reasoning systems, and things that sit at the intersection of math and meaning.</p>
+      {% assign about_page = site.tabs | where: "permalink", "/about/" | first %}
+    {% if about_page %}
+      {{ about_page.content }}
+    {% endif %}
   </div>
 </div>
 
