@@ -17,10 +17,10 @@ A modular pipeline for training language models on small, morphologically comple
 
 
 **AI agent for sales call analysis**
-Built during an ML internship — an agent pipeline that transcribes, segments, and analyzes sales call recordings to surface insights for sales teams.
+Built during an ML internship, an agent pipeline that transcribes, segments, and analyzes sales call recordings to surface insights for sales teams.
 
 **Healthcare RAG pipeline**
-Built during a data science internship — a retrieval-augmented generation system for querying and surfacing information from clinical documents.
+Built during a data science internship, a retrieval-augmented generation system for querying and surfacing information from clinical documents.
 
 ## Links
 
