@@ -217,6 +217,171 @@ footer {
   color: var(--muted);
 }
 
+/* ── Post extras ── */
+
+.post-back {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-back a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.post-back a:hover {
+  color: var(--link-hover);
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.post-nav-prev,
+.post-nav-next {
+  text-decoration: none;
+  color: var(--muted);
+  max-width: 48%;
+}
+
+.post-nav-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.post-nav-prev:hover,
+.post-nav-next:hover {
+  color: var(--link-hover);
+}
+
+/* ── Table of contents ── */
+
+.toc {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.toc-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+.toc-h3 {
+  padding-left: 1rem;
+}
+
+.toc a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.toc a:hover {
+  color: var(--link-hover);
+}
+
+/* ── Tables ── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+th {
+  color: var(--heading);
+  background: var(--code-bg);
+}
+
+/* ── Images & figures ── */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.post-content img {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+/* ── Footnotes ── */
+
+.footnotes {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+/* ── Syntax highlighting (Rouge) ── */
+
+.highlight, figure.highlight {
+  margin-bottom: 1rem;
+}
+
+.highlight .lineno {
+  color: var(--muted);
+  margin-right: 1rem;
+  user-select: none;
+}
+
+.highlight pre { margin: 0; }
+.highlight, .highlight pre, .highlight code { color: #d4d4d4; background: var(--code-bg); }
+
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cd { color: #6b7280; font-style: italic; } /* comments */
+.highlight .cp { color: #6b7280; } /* preprocessor */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #f5c842; } /* keywords */
+.highlight .o, .highlight .ow { color: #fcd34d; } /* operators */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: #a3e635; } /* strings */
+.highlight .m, .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo, .highlight .il { color: #fb923c; } /* numbers */
+.highlight .n, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #e5e7eb; } /* names/vars */
+.highlight .nf, .highlight .fm { color: #60a5fa; } /* functions */
+.highlight .nc, .highlight .nn { color: #f5c842; } /* classes/namespaces */
+.highlight .nb, .highlight .bp { color: #38bdf8; } /* builtins */
+.highlight .nt { color: #f5c842; } /* html tags */
+.highlight .na { color: #fb923c; } /* attributes */
+.highlight .nd { color: #c084fc; } /* decorators */
+.highlight .gd { color: #f87171; } /* diff delete */
+.highlight .gi { color: #a3e635; } /* diff insert */
+.highlight .err { color: #f87171; }
+.highlight .p { color: #d4d4d4; } /* punctuation */
+
 /* ── Responsive ── */
 
 @media (max-width: 480px) {
@@ -227,5 +392,13 @@ footer {
 
   .profile-wrap {
     flex-direction: column;
+  }
+
+  .post-nav {
+    flex-direction: column;
+  }
+
+  .post-nav-next {
+    text-align: left;
   }
 }
